@@ -2,7 +2,7 @@ async function cargarJuegos() {
     try {
         const baseURL = window.location.origin.includes("localhost")
       ? "http://localhost:3000"
-      : "https://tu-app.vercel.app"; // Cambia 'tu-app.vercel.app' por tu dominio en Vercel
+      : "https://api-juegos.vercel.app"; // Cambia 'tu-app.vercel.app' por tu dominio en Vercel
 
          const response = await fetch(`${baseURL}/api/games`);
          const data = await response.json();

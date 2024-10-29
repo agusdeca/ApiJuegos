@@ -15,7 +15,7 @@ window.onload = function () {
     try {
       const baseURL = window.location.origin.includes("localhost")
         ? "http://localhost:3000"
-        : "https://tu-app.vercel.app"; 
+        : "https://api-juegos.vercel.app"; 
   
       const response = await fetch(`${baseURL}/getpassword`, {
         method: "POST",
